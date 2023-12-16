@@ -37,7 +37,7 @@ func print(p printer) {
 func test(e expense, p printer) {
 	fmt.Printf("Printing with cost: $%.2f ...\n", e.cost())
 	p.print()
-	fmt.Println("====================================\n")
+	fmt.Println("====================================")
 }
 
 func main() {
