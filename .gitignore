@@ -1,3 +1,4 @@
 vendor
 .env
 project.exe
+project/postgres-data

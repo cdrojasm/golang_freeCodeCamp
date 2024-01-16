@@ -1,0 +1,8 @@
+FROM ubuntu:18.04
+WORKDIR /app
+RUN apt-get update
+RUN apt search golang
+RUN apt-get install -y golang
+RUN go install github.com/pressly/goose/v3/cmd/goose@latest
+RUN go install github.com/kyleconroy/sqlc/cmd/sqlc@v1.17.2
+CMD ["sh", "sleep 1000000"]
